@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+      <!-- Navegador -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Jose Pablo Mendoza Mariscal</a>
+
+            <!-- Boton responsive para menu despegable -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Contenido del menú -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="sobreMi.html">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de proyectos -->
+    <section id="proyectos" class="mt-5">
+        <div class="container">
+            <h2 class="mb-5">Proyectos</h2>
+            <!-- Tarjeta del Proyecto 1 -->
+            <div class="card">
+                <img src="./src/projects/HeavyMadness.png" class="card-img-top" alt="Proyecto 1" style="object-fit: cover;width: 100%;height: 250px;">
+                <div class="card-body">
+                    <h5 class="card-title">Heavy Madness</h5>
+                    <p class="card-text">VideoJuego 2D estilo pixel art.</p>
+                    <p class="card-text"><a href="https://heavy-madness.netlify.app" target="_blank" style="text-decoration: none;"><strong>Sitio Web</strong></a></p>
+                    <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalProyecto1">Ver más</a>
+                </div>
+            </div>
+            <!-- Agrega más tarjetas de proyectos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Modal para Proyecto 1 -->
+<div class="modal fade" id="modalProyecto1" tabindex="-1" aria-labelledby="modalProyecto1Label" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalProyecto1Label">Heavy Madness</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- Contenido detallado del proyecto 1 -->
+                <p>
+                    Cuatro exploradores van a una isla llamada Heavy Madness en busca de diversión, pero descubren que es una nave extraterrestre. Los alienígenas planeaban estudiar a los humanos, pero los exploradores, hábiles y decididos, se rebelan. Con habilidades únicas, enfrentan desafíos y criaturas, forman alianzas, y finalmente derrotan al líder extraterrestre. Escapan antes de que la nave-isla se desmorone. 
+                    "Heavy Madness" es una épica historia de acción y ciencia ficción donde la astucia humana supera a la tecnología alienígena.
+                </p>
+                <!-- Carousel de imágenes -->
+                <div id="carouselProyecto1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Imágenes del proyecto 1 -->
+                        <div class="carousel-item active">
+                            <img src="./src/projects/hm1.png" class="d-block w-100" alt="Imagen 1">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./src/projects/hm2.png" class="d-block w-100" alt="Imagen 2">
+                        </div>
+                        <!-- Agrega más imágenes según sea necesario -->
+                    </div>
+                    <!-- Controles del carousel -->
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselProyecto1" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <!-- Agrega aquí cualquier otro botón que necesites -->
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

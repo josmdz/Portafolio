@@ -1,0 +1,192 @@
+body {
+    font-family: "Pixelify Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background: linear-gradient(to right, #892CDC, #BC6FF1); 
+    color: #343a40;
+    margin: 0;
+}
+
+.banner {
+    height: 100vh;
+    background: url('/src/background4.gif') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); /* Añadir un sombreado al fondo */
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.banner h1:hover {
+    color: #C060A1; /* cambia el color al pasar el cursos dodne esta mi nombre en el banner */
+}
+
+.banner a {
+    text-decoration: none;
+}
+
+.subtitle {
+    font-size: 2.5rem;
+    color: #f8f9fa;
+}
+
+/* Estilos para los iconos de redes sociales en el banner */
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centra los íconos horizontalmente */
+    margin-top: 20px; /* Ajusta el margen superior según sea necesario */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Ajusta el espaciado horizontal entre los íconos según sea necesario */
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave a la animación */
+}
+
+/* Añade escala al pasar el ratón sobre los iconos */
+.social-icons a:hover {
+    transform: scale(1.2); /* Ajusta el factor de escala según sea necesario */
+}
+
+/* Ajusta el tamaño de las imágenes directamente */
+.social-icons a img {
+    width: 50px; 
+    height: 50px;
+    display: block; 
+}
+
+/* Barra de navegación */
+.navbar {
+    background-color: #6A097D; /* Color de fondo */
+    padding: 15px; /* Espaciado interior */
+    border-bottom: 2px solid #C060A1; /* Borde inferior */
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: background-color 0.5s ease; /* Transición suave del color de fondo */
+}
+
+.navbar a {
+    color: #ecf0f1; /* Color del texto */
+    margin: 0 15px; /* Espaciado entre enlaces */
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease; /* Transición suave del color del texto */
+}
+
+/* Cambia el color del texto al pasar el cursor */
+.navbar a:hover {
+    color: #C060A1;
+}
+
+/* Agrega una animación a la barra de navegación */
+.navbar.animate {
+    background-color: #3498db; /* Cambia el color de fondo cuando se añade la clase "animate" */
+}
+
+/* Estilos para el logotipo (opcional) */
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ecf0f1;
+}
+
+/* Agrega una animación al logotipo */
+.navbar-brand:hover {
+    color: #e74c3c;
+}
+
+/* Secciones */
+section {
+    padding: 50px 0;
+}
+
+/* Tarjetas de proyectos */
+.card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Animación de entrada para la tarjeta */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-card {
+    animation: fadeInUp 1s ease-out;
+}
+
+/* Ajustes para la tarjeta y la imagen */
+#sobre_mi .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+#card_sobreMi {
+    width: 70%; /* Ajusta el ancho de la tarjeta según sea necesario */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+#habilidades .col-lg-2 img {
+    transition: transform 0.3s ease-in-out;
+}
+
+#habilidades .col-lg-2 img:hover {
+    transform: scale(1.2);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-image {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.card-image img {
+    width: 250px;
+    height: 350px;
+    display: block;
+}
+
+@media (max-width: 768px) {
+    #sobre_mi .container {
+        flex-direction: column-reverse; /* Cambia la dirección de apilamiento de los elementos */
+        align-items: center; /* Centra los elementos en el eje transversal */
+    }
+
+    .card_sobreMi {
+        width: 100%; /* Ocupa el 100% del ancho en dispositivos móviles */
+    }
+
+    .card-image {
+        text-align: center; /* Centra la imagen en dispositivos móviles */
+        margin-top: 20px; /* Ajusta el margen según sea necesario */
+    }
+}
+
