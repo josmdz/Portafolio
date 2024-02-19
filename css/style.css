@@ -20,6 +20,19 @@ body {
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); /* Añadir un sombreado al fondo */
 }
 
+.banner_contact {
+    height: 100vh;
+    background: url('/src/background3.gif') center/cover no-repeat;
+    position: relative;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.3); /* Añadir un sombreado al fondo */
+}
+
 .banner h1 {
     font-size: 3rem;
     margin-bottom: 10px;
@@ -27,8 +40,16 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+.banner_contact h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+
 .banner h1:hover {
-    color: #C060A1; /* cambia el color al pasar el cursos dodne esta mi nombre en el banner */
+    color: #C060A1;
 }
 
 .banner a {
@@ -49,8 +70,8 @@ body {
 }
 
 .social-icons a {
-    margin: 0 10px; /* Ajusta el espaciado horizontal entre los íconos según sea necesario */
-    transition: transform 0.3s ease-in-out; /* Añade una transición suave a la animación */
+    margin: 0 10px; /* Ajusta el espaciado horizontal entre los iconos segun sea necesario */
+    transition: transform 0.3s ease-in-out; /* Añade una transicion suave a la animacion */
 }
 
 /* Añade escala al pasar el ratón sobre los iconos */
